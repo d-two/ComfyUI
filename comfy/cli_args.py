@@ -58,6 +58,7 @@ cm_group.add_argument("--disable-cuda-malloc", action="store_true", help="Disabl
 fp_group = parser.add_mutually_exclusive_group()
 fp_group.add_argument("--force-fp32", action="store_true", help="Force fp32 (If this makes your GPU work better please report it).")
 fp_group.add_argument("--force-fp16", action="store_true", help="Force fp16.")
+fp_group.add_argument("--force-bf16", action="store_true", help="Force bf16.")
 
 fpunet_group = parser.add_mutually_exclusive_group()
 fpunet_group.add_argument("--fp32-unet", action="store_true", help="Run the diffusion model in fp32.")
